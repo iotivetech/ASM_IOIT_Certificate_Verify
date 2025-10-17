@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore";
 
 // ✅ Your Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA9vxLVzq3R37IEZOUtTEVdRFPYTcBWAzA",
-  authDomain: "iotive-certificates-83794.firebaseapp.com",
-  projectId: "iotive-certificates-83794",
-  storageBucket: "iotive-certificates-83794.firebasestorage.app",
-  messagingSenderId: "575517852957",
-  appId: "1:575517852957:web:8ec2f6a24e9ba2d1e64df4"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
 };
 
 // ✅ Initialize Firebase
